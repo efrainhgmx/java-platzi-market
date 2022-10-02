@@ -27,6 +27,7 @@ public class Producto {
 
     private Boolean estado;
 
+
     public Integer getIdProducto() {
         return idProducto;
     }
