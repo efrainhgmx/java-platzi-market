@@ -75,7 +75,6 @@ public class Producto {
         return cantidadStock;
     }
 
-
     public void setCantidadStock(Integer cantidadStock) {
         this.cantidadStock = cantidadStock;
     }

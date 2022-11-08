@@ -1,10 +1,11 @@
 package com.platzi.market.persistence.entity;
 
 import javax.persistence.Column;
+import javax.persistence.Embeddable;
 import java.io.Serializable;
 
-public class CompraProductoPK implements Serializable {
-
+@Embeddable
+public class ComprasProductoPK implements Serializable {
     @Column(name = "id_compra")
     private Integer idCompra;
 
@@ -26,6 +27,4 @@ public class CompraProductoPK implements Serializable {
     public void setIdProducto(Integer idProducto) {
         this.idProducto = idProducto;
     }
-
-
 }

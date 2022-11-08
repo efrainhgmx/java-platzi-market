@@ -4,15 +4,12 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "compras_productos")
-public class CompraProducto {
-
+public class ComprasProducto {
     @EmbeddedId
-    private CompraProductoPK id;
+    private ComprasProductoPK id;
 
     private Integer cantidad;
-
     private Double total;
-
     private Boolean estado;
 
     @ManyToOne
@@ -20,16 +17,15 @@ public class CompraProducto {
     @JoinColumn(name = "id_compra", insertable = false, updatable = false)
     private Compra compra;
 
-
     @ManyToOne
     @JoinColumn(name = "id_producto", insertable = false, updatable = false)
     private Producto producto;
 
-    public CompraProductoPK getId() {
+    public ComprasProductoPK getId() {
         return id;
     }
 
-    public void setId(CompraProductoPK id) {
+    public void setId(ComprasProductoPK id) {
         this.id = id;
     }
 
