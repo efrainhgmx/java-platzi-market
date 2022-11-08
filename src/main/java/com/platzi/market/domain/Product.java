@@ -1,6 +1,5 @@
 package com.platzi.market.domain;
 
-
 public class Product {
     private int productId;
     private String name;
@@ -8,7 +7,6 @@ public class Product {
     private double price;
     private int stock;
     private boolean active;
-
     private Category category;
 
     public int getProductId() {
