@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 import java.util.Date;
 @Component
 public class JWTUtil {
-    private static final String KEY = "platzi";
+    private static final String KEY = "platzim2050p123456r321platzim2050p123456r321";
 
     public String generateToken(UserDetails userDetails) {
         return Jwts.builder().setSubject(userDetails.getUsername()).setIssuedAt(new Date())
