@@ -21,6 +21,10 @@ public class JWTUtil {
 
     }
 
+    public String extractUsername(String token) {
+        return getClaims(token).getSubject();
+    }
+
     private Claims getClaims(String token) {
         return Jwts.parser().setSigningKey(KEY).parseClaimsJws(token).getBody();
     }
